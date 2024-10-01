@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "contacts-api2"
+version = "0.1.0"
+description = ""
+package-mode = false
+authors = ["Yevgeniy Python <itpython2023@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.114.2"
+uvicorn = "^0.30.6"
+psycopg2 = "^2.9.9"
+pydantic = {extras = ["email"], version = "^2.9.1"}
+alembic = "^1.13.2"
+requests = "^2.32.3"
+libgravatar = "^1.0.4"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+python-multipart = "^0.0.9"
+sqlalchemy = "^2.0.35"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-dotenv = "^1.0.1"
+fastapi-mail = "^1.4.1"
+redis = "^5.0.8"
+pydantic-settings = "^2.5.2"
+fastapi-limiter = "^0.1.6"
+cloudinary = "^1.41.0"
+pytest = "^8.3.3"
+pytest-mock = "^3.14.0"
+httpx = "^0.27.2"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^8.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
