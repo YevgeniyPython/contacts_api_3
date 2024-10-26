@@ -51,15 +51,16 @@ poetry install
 ```
 
 
-2. Set up environment variables in the .env file to connect to the PostgreSQL database and configure the SMTP server to send emails (an example .env.example is attached). 
+4. Set up environment variables in the .env file to connect to the PostgreSQL database and configure the SMTP server to send emails (an example .env.example is attached). 
 
-3. Run containers using Docker Compose:
+5. Run containers using Docker Compose and run FastApi server:
 ```
 docker-compose up --build
+uvicorn main:app --reload
 ```
 This will get the FastAPI server and PostgreSQL container up and running.
 
-4. Open the API documentation at http://localhost:8000/docs or http://localhost:8000/redoc to see the available endpoints.
+6. Open the API documentation at http://localhost:8000/docs or http://localhost:8000/redoc to see the available endpoints.
 
 ### Usage
 #### Main Endpoints
