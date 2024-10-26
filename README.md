@@ -32,8 +32,24 @@ Contacts API is a contact management application developed using FastAPI. The ap
 
 ```bash
 git clone https://github.com/YevgeniyPython/contacts_api_3
-cd contacts_api_3
 ```
+
+2. Create a virtual environment:
+```
+python -m venv venv
+source venv/bin/activate # For Linux/Mac
+venv\Scripts\activate # For Windows
+```
+3. Install dependencies:
+
+```
+pip install -r requirements.txt
+```  
+or
+```
+poetry install
+```
+
 
 2. Set up environment variables in the .env file to connect to the PostgreSQL database and configure the SMTP server to send emails (an example .env.example is attached). 
 
