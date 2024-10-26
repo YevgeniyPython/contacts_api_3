@@ -87,17 +87,6 @@ This will get the FastAPI server and PostgreSQL container up and running.
 - **PATCH api/users/avatar** — Update the avatar of the currently authenticated user by uploading a new image to Cloudinary.
 
 
-### Example .env File
-Create a .env file in the root project folder and configure it as follows:
-```dotenv
-DATABASE_URL=postgresql://user:password@db/contacts_db
-SECRET_KEY=your_secret_key
-SMTP_HOST=smtp.example.com
-SMTP_PORT=587
-SMTP_USER=your_email@example.com
-SMTP_PASS=your_email_password
-```
-
 ### Documentation
 
 To view detailed documentation, open the file docs/_build/html/index.html in your browser.
